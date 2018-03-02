@@ -11,9 +11,8 @@
             <button ion-button icon-only>
                 <ion-icon name="information-circle"></ion-icon>
             </button>
-            <button ion-button icon-only>
+            <button ion-button menuToggle>
                 <ion-icon name="menu"></ion-icon>
-                <!-- todo: add menu structure -->
             </button>
         </ion-buttons>
     </ion-navbar>
@@ -66,7 +65,7 @@
                 </div>
                 <div class="col">
                     <h2>
-                        <button [navPush]="admin" ion-button color="danger" small id="Admin">Admin</button>
+                       <button [navPush]="admin" ion-button color="danger" small id="Admin">Admin</button>
                     </h2>
                 </div>
             </div>
@@ -93,7 +92,7 @@
         </ion-card-header>
         <ion-card-content>
             <!-- Uses classical html navigation -->
-            <a href="/#/admin">Jump to Administration</a>
+            <a href="/#/user">Jump to Administration</a>
 
 
             <!-- Use the ionic stack for navigation (automatic back button) -->
@@ -103,6 +102,59 @@
             <!-- Style Icon Button -->
             <button [navPush]="admin" ion-button icon-only>
                 <ion-icon name="information-circle"></ion-icon>
+
+                <div class="row">
+                        <div class="col">
+                            <h2>Interface für den Nutzer</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/user</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button [navPush]="user" ion-button color="secondary" small id="user">User</button>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Interface für Entwickler</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/dev</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button [navPush]="dev" ion-button color="energized" small id="developer">Developer</button>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Interface für Administratoren</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/admin</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                               <button [navPush]="admin" ion-button color="danger" small id="Admin">Admin</button>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Rest-API Schnittstelle</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/api</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button small id="rest">Rest-API</button>
+                            </h2>
+                        </div>
+                    </div>
             </button>
         </ion-card-content>
     </ion-card>

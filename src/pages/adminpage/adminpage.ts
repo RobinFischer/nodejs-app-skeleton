@@ -1,6 +1,9 @@
 import { Component, ViewChild } from "@angular/core";
 import { NavController, IonicPage } from "ionic-angular";
 
+import { UserPage } from "../userpage/userpage";
+import { DeveloperPage } from "../developerpage/developerpage";
+
 @IonicPage({
   name: "admin",
   segment: "admin"
@@ -10,7 +13,10 @@ import { NavController, IonicPage } from "ionic-angular";
   templateUrl: "adminpage.html"
 })
 export class AdminPage {
-  constructor(public navCtrl: NavController) {}
 
+  user = UserPage;
+  dev = DeveloperPage;
+  
+    constructor(public navCtrl: NavController) {}
   ionViewDidLoad() {}
 }

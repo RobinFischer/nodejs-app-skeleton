@@ -11,13 +11,32 @@
             <button ion-button icon-only>
                 <ion-icon name="information-circle"></ion-icon>
             </button>
-            <button ion-button icon-only>
-                    <ion-icon name="menu"></ion-icon>
-              </button>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
             </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content padding>
+
+        <ion-menu side="right" [content]="mycontent">
+                <ion-content>
+                  <ion-list>
+                    <p>
+                    <button [navPush]="user" ion-button color="secondary" small id="user">User</button>
+                    <br>
+                    <button [navPush]="dev" ion-button color="energized" small id="dev">Developer</button>
+                    <br>
+                    <button [navPush]="admin" ion-button color="danger" small id="admin">Admin</button>
+                    <br>
+                    <button ion-button small id="rest">Rest-API</button>
+                    </p>
+                  </ion-list>
+                </ion-content>
+              </ion-menu>
+              
+              <ion-nav #mycontent [root]="rootPage"></ion-nav>
+              
     <ion-card>
         <ion-card-content text-right>
             <button ion-button class="active" round margin-left id="refresh">
@@ -61,7 +80,7 @@
                             <h2>Download YAML für Sqagger Editor</h2>
                         </div>
                         <div class="col">
-                            <h2>:/dev/swagger.yaml</h2>
+                            <h2>:/dev/swagger</h2>
                         </div>
                         <div class="col">
                             <h2>

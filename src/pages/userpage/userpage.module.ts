@@ -5,7 +5,7 @@ import { UserPage } from "./userpage";
 @NgModule({
   declarations: [UserPage],
   imports: [IonicPageModule.forChild(UserPage)],
-  entryComponents: [UserPage],
+  //entryComponents: [UserPage]
   bootstrap: [UserPage]
 })
 export class UserPageModule {}
