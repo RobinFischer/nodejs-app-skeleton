@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-navbar class="bar-positive">
+        <ion-title>
+            <img src="assets/logo.png" alt="Company Logo" style="height:30px; filter: brightness(0) invert(1);">
+            <font color="white"> ScaleIT Ionic Node.js Sample Application </font>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="person"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                    <ion-icon name="menu"></ion-icon>
+              </button>
+            </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card>
+        <ion-card-content text-right>
+            <button ion-button class="active" round margin-left id="refresh">
+                <ion-icon name="refresh"></ion-icon>
+            </button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            ScaleIT App Developer Page
+        </ion-card-header>
+        <ion-card-content>
+                <div class="row">
+                        <div class="col">
+                            <h2>Entwicklerhandbuch für die App</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/developer/doc</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button color="energized" small id="doc">Handbuch</button>
+                            </h2>
+                        </div>
+                    </div>
+                <div class="row">
+                        <div class="col">
+                            <h2>Interaktive Berschreibung der Rest-API</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/dev/rest</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button color="energized" small id="rest">Rest-UI</button>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Download YAML für Sqagger Editor</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/dev/swagger.yaml</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button color="energized" small id="yaml">Download YAML</button>
+                            </h2>
+                        </div>
+                    </div>
+        </ion-card-content>
+        <ion-card-content style="height:50vh;">
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer style=" background-color: lightgray; text-align: center; justify-content: center; align-items: center;">
+    <ion-toolbar id="footer" transparent>
+        Footer: (C) MIT License, ScaleIT, KIT
+    </ion-toolbar>
+</ion-footer>

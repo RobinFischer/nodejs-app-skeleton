@@ -11,7 +11,10 @@
             <button ion-button icon-only>
                 <ion-icon name="information-circle"></ion-icon>
             </button>
-        </ion-buttons>
+            <button ion-button icon-only>
+                    <ion-icon name="menu"></ion-icon>
+              </button>
+            </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content padding>
@@ -24,11 +27,35 @@
     </ion-card>
     <ion-card>
         <ion-card-header>
-            Sample
+            ScaleIT App User Page
         </ion-card-header>
         <ion-card-content>
-            Content
-			Test
+                <div class="row">
+                        <div class="col">
+                            <h2>Nutzerhandbuch für die App</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/user/doc</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button color="secondary" small id="docusr">Handbuch</button>
+                            </h2>
+                        </div>
+                    </div>
+                <div class="row">
+                        <div class="col">
+                            <h2>Relevante Statusinformationen über die App für den Nutzer</h2>
+                        </div>
+                        <div class="col">
+                            <h2>:/user/status</h2>
+                        </div>
+                        <div class="col">
+                            <h2>
+                                <button ion-button color="secondary" small id="statususr">Status</button>
+                            </h2>
+                        </div>
+                    </div>
         </ion-card-content>
         <ion-card-content style="height:50vh;">
         </ion-card-content>
@@ -39,15 +66,15 @@
         </ion-card-header>
         <ion-card-content>
             <!-- Uses classical html navigation -->
-            <a href="/#/page2">Jump to Page2</a>
+            <a href="/#/admin">Jump to Administration</a>
 
 
             <!-- Use the ionic stack for navigation (automatic back button) -->
             <!-- Text Button -->
-            <button [navPush]="page2">Push Page2 onto the stack and navigate to it</button>
+            <button [navPush]="admin">Push Page2 onto the stack and navigate to it</button>
 
             <!-- Style Icon Button -->
-            <button [navPush]="page2" ion-button icon-only>
+            <button [navPush]="admin" ion-button icon-only>
               <ion-icon name="information-circle"></ion-icon>
             </button>
         </ion-card-content>

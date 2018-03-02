@@ -1,0 +1,114 @@
+<ion-header>
+    <ion-navbar class="bar-positive">
+        <ion-title>
+            <img src="assets/logo.png" alt="Company Logo" style="height:30px; filter: brightness(0) invert(1);">
+            <font color="white"> ScaleIT Ionic Node.js Sample Application </font>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="person"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                <ion-icon name="menu"></ion-icon>
+                <!-- todo: add menu structure -->
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card>
+        <ion-card-content text-right>
+            <button ion-button class="active" round margin-left id="refresh">
+                <ion-icon name="refresh"></ion-icon>
+            </button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            ScaleIT App Home Page
+        </ion-card-header>
+        <ion-card-content>
+            <div class="row">
+                <div class="col">
+                    <h2>Interface für den Nutzer</h2>
+                </div>
+                <div class="col">
+                    <h2>:/user</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button [navPush]="user" ion-button color="secondary" small id="user">User</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Interface für Entwickler</h2>
+                </div>
+                <div class="col">
+                    <h2>:/dev</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button [navPush]="dev" ion-button color="energized" small id="developer">Developer</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Interface für Administratoren</h2>
+                </div>
+                <div class="col">
+                    <h2>:/admin</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button [navPush]="admin" ion-button color="danger" small id="Admin">Admin</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Rest-API Schnittstelle</h2>
+                </div>
+                <div class="col">
+                    <h2>:/api</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button ion-button small id="rest">Rest-API</button>
+                    </h2>
+                </div>
+            </div>
+        </ion-card-content>
+        <ion-card-content style="height:50vh;">
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            Navigation
+        </ion-card-header>
+        <ion-card-content>
+            <!-- Uses classical html navigation -->
+            <a href="/#/admin">Jump to Administration</a>
+
+
+            <!-- Use the ionic stack for navigation (automatic back button) -->
+            <!-- Text Button -->
+            <button [navPush]="admin">Push Page2 onto the stack and navigate to it</button>
+
+            <!-- Style Icon Button -->
+            <button [navPush]="admin" ion-button icon-only>
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer style=" background-color: lightgray; text-align: center; justify-content: center; align-items: center;">
+    <ion-toolbar id="footer" transparent>
+        Footer: (C) MIT License, ScaleIT, KIT
+    </ion-toolbar>
+</ion-footer>

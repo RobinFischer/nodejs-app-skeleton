@@ -1,6 +1,6 @@
 .ios, .md {
  
-    page-home {
+    admin-page {
  
         .scroll-content {
             background-color: map-get($colors, light);
@@ -9,9 +9,9 @@
         ion-card-header {
             font-weight: bold;
         }
-        .button {
-            background: gray;
-          }
+        // .button {
+        //     background: gray;
+        //   }
           .button.active {
             background: map-get($colors, primary);
           }

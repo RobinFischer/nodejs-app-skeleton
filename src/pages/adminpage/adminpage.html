@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-navbar class="bar-positive">
+        <ion-title>
+            <img src="assets/logo.png" alt="Company Logo" style="height:30px; filter: brightness(0) invert(1);">
+            <font color="white"> ScaleIT Ionic Node.js Sample Application </font>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="person"></ion-icon>
+            </button>
+            <button ion-button icon-only>
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card>
+        <ion-card-content text-right>
+            <button ion-button class="active" round margin-left id="refresh">
+                <ion-icon name="refresh"></ion-icon>
+            </button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            Administrations Interface
+        </ion-card-header>
+        <ion-card-content>
+            <div class="row">
+                <div class="col">
+                    <h2>Konfiguration der App</h2>
+                </div>
+                <div class="col">
+                    <h2>:/admin/config</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button ion-button color="danger" small id="config">Konfiguration</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Administrations-Handbuch für die App</h2>
+                </div>
+                <div class="col">
+                    <h2>:/admin/doc</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button ion-button color="danger" small id="doc">Handbuch</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Relevante Statusinformationen über die App für den Administrator</h2>
+                </div>
+                <div class="col">
+                    <h2>:/admin/status</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button ion-button color="danger" small id="status">Status</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Logs der App</h2>
+                </div>
+                <div class="col">
+                    <h2>:/admin/log</h2>
+                </div>
+                <div class="col">
+                    <h2>
+                        <button ion-button color="danger" small id="log">Log</button>
+                    </h2>
+                </div>
+            </div>
+        </ion-card-content>
+        <ion-card-content style="height:50vh;">
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+<ion-footer style=" background-color: lightgray; text-align: center; justify-content: center; align-items: center;">
+    <ion-toolbar id="footer" transparent>
+        Footer: (C) MIT License, ScaleIT, KIT
+    </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,21 @@
+.ios, .md {
+ 
+    developer-page {
+ 
+        .scroll-content {
+            background-color: map-get($colors, light);
+        }
+ 
+        ion-card-header {
+            font-weight: bold;
+        }
+        // .button {
+        //     background: gray; // => intended behavior to have all buttons gray?
+        //   }
+        .button.active {
+            background: map-get($colors, primary);
+          }
+ 
+    }
+ 
+}
